@@ -18,20 +18,6 @@ app.use(
   })
 );
 
-// get all funds
-// app.get("/fund", async (req, res) => {
-//   try {
-//     const fund = await Fund.find({}, { _id: 1, fundName: 1 })
-//       .distinct("fundName")
-//       .sort({
-//         fundName: 1,
-//       });
-//     res.json({ data: fund });
-//   } catch {
-//     res.status(400);
-//   }
-// });
-
 // Get all funds
 app.get("/fund", async (req, res) => {
   try {
